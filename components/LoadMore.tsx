@@ -19,7 +19,6 @@ const LoadMore: React.FC = () => {
       const newData: Array<AnimeCard> = await fetchAmine(page);
       setData([...data, ...newData]);
       page++;
-      console.log(page);
     };
 
     if (inView) {
